@@ -1,0 +1,1638 @@
+{
+  "version": 1,
+  "generated": "2026-05-02",
+  "source": "manually authored by Tyler+Claude (clue-1 manual override per OPS-validation)",
+  "words": [
+    {
+      "word": "cat",
+      "definition": "a small furry animal that says meow",
+      "difficulty": 1,
+      "tags": [
+        "common",
+        "animals"
+      ]
+    },
+    {
+      "word": "dog",
+      "definition": "a friendly animal that barks and wags its tail",
+      "difficulty": 1,
+      "tags": [
+        "common",
+        "animals"
+      ]
+    },
+    {
+      "word": "run",
+      "definition": "to move quickly using your legs",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "jump",
+      "definition": "to push off the ground and leap into the air",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "big",
+      "definition": "large in size, not small",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "small",
+      "definition": "little in size, not big",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "hot",
+      "definition": "very warm, like the sun or fire",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "cold",
+      "definition": "very chilly, like ice or snow",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "sun",
+      "definition": "the bright star that lights up the sky in the day",
+      "difficulty": 1,
+      "tags": [
+        "common",
+        "space"
+      ]
+    },
+    {
+      "word": "moon",
+      "definition": "the round shape we see in the night sky",
+      "difficulty": 1,
+      "tags": [
+        "common",
+        "space"
+      ]
+    },
+    {
+      "word": "red",
+      "definition": "the color of a fire truck or an apple",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "blue",
+      "definition": "the color of the sky on a clear day",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "happy",
+      "definition": "feeling glad or full of joy",
+      "difficulty": 1,
+      "tags": [
+        "common",
+        "emotions"
+      ]
+    },
+    {
+      "word": "sad",
+      "definition": "feeling unhappy or down",
+      "difficulty": 1,
+      "tags": [
+        "common",
+        "emotions"
+      ]
+    },
+    {
+      "word": "mom",
+      "definition": "the woman who is your mother",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "dad",
+      "definition": "the man who is your father",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "eat",
+      "definition": "to put food in your mouth and swallow it",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "sleep",
+      "definition": "to rest with your eyes closed",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "walk",
+      "definition": "to move on your feet at a steady pace",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "play",
+      "definition": "to do something fun for enjoyment",
+      "difficulty": 1,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "fast",
+      "definition": "moving quickly, with great speed",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "slow",
+      "definition": "moving without much speed",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "tall",
+      "definition": "high up, far from the ground",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "short",
+      "definition": "not very tall or not very long",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "brave",
+      "definition": "willing to do something even when you are scared",
+      "difficulty": 2,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "scared",
+      "definition": "feeling afraid",
+      "difficulty": 2,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "bright",
+      "definition": "shining with a lot of light",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "dark",
+      "definition": "having little or no light",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "loud",
+      "definition": "making a strong, big sound",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "quiet",
+      "definition": "making little or no sound",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "train",
+      "definition": "a long line of cars pulled by an engine on tracks",
+      "difficulty": 2,
+      "tags": [
+        "trains",
+        "common"
+      ]
+    },
+    {
+      "word": "car",
+      "definition": "a small vehicle with four wheels",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "book",
+      "definition": "pages with words and pictures bound together",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "friend",
+      "definition": "someone you like and enjoy spending time with",
+      "difficulty": 2,
+      "tags": [
+        "common",
+        "emotions"
+      ]
+    },
+    {
+      "word": "water",
+      "definition": "the clear liquid we drink and find in rivers and oceans",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "food",
+      "definition": "what we eat to grow and have energy",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "road",
+      "definition": "a path that cars and trucks travel on",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "hill",
+      "definition": "a small mountain, ground that rises up",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "rain",
+      "definition": "water that falls from clouds in the sky",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "snow",
+      "definition": "soft, cold white flakes that fall from the sky",
+      "difficulty": 2,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "track",
+      "definition": "the metal rails a train rolls along",
+      "difficulty": 3,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "steam",
+      "definition": "the misty cloud that rises from boiling water",
+      "difficulty": 3,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "engine",
+      "definition": "the part of a machine that makes it go",
+      "difficulty": 3,
+      "tags": [
+        "trains",
+        "common"
+      ]
+    },
+    {
+      "word": "wagon",
+      "definition": "a four-wheeled cart used to carry things",
+      "difficulty": 3,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "forest",
+      "definition": "a big area filled with many trees",
+      "difficulty": 3,
+      "tags": [
+        "fantasy",
+        "common"
+      ]
+    },
+    {
+      "word": "river",
+      "definition": "a long stream of water that flows across land",
+      "difficulty": 3,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "hero",
+      "definition": "a person who is brave and helps others",
+      "difficulty": 3,
+      "tags": [
+        "fantasy",
+        "emotions"
+      ]
+    },
+    {
+      "word": "magic",
+      "definition": "special powers that seem to break the rules of nature",
+      "difficulty": 3,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "planet",
+      "definition": "a big round world that goes around a star",
+      "difficulty": 3,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "star",
+      "definition": "a glowing ball of gas far away in space",
+      "difficulty": 3,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "brave",
+      "definition": "showing courage in the face of fear",
+      "difficulty": 3,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "kind",
+      "definition": "gentle and caring toward others",
+      "difficulty": 3,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "clever",
+      "definition": "smart and quick at thinking",
+      "difficulty": 3,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "strong",
+      "definition": "having lots of physical power",
+      "difficulty": 3,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "ride",
+      "definition": "to sit on or in a moving thing",
+      "difficulty": 3,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "fox",
+      "definition": "a small wild animal with a bushy tail",
+      "difficulty": 3,
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "word": "bear",
+      "definition": "a big strong animal with thick fur",
+      "difficulty": 3,
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "word": "bird",
+      "definition": "an animal with feathers and wings",
+      "difficulty": 3,
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "word": "fish",
+      "definition": "an animal that lives in water and breathes through gills",
+      "difficulty": 3,
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "word": "nest",
+      "definition": "a place birds build to lay their eggs",
+      "difficulty": 3,
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "word": "locomotive",
+      "definition": "a powerful engine that pulls a train along the track",
+      "difficulty": 4,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "conductor",
+      "definition": "the person in charge of running the train",
+      "difficulty": 4,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "station",
+      "definition": "a building where trains pick up and drop off passengers",
+      "difficulty": 4,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "whistle",
+      "definition": "a high, sharp sound made by a train or a person",
+      "difficulty": 4,
+      "tags": [
+        "trains",
+        "common"
+      ]
+    },
+    {
+      "word": "journey",
+      "definition": "a trip from one place to another",
+      "difficulty": 4,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "dragon",
+      "definition": "a giant make-believe creature that breathes fire",
+      "difficulty": 4,
+      "tags": [
+        "fantasy",
+        "animals"
+      ]
+    },
+    {
+      "word": "wizard",
+      "definition": "a person in stories who can do magic",
+      "difficulty": 4,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "treasure",
+      "definition": "valuable things, like gold or jewels",
+      "difficulty": 4,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "quest",
+      "definition": "a long journey to find or do something important",
+      "difficulty": 4,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "brave",
+      "definition": "feeling fear but doing the hard thing anyway",
+      "difficulty": 4,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "gigantic",
+      "definition": "extremely large, much bigger than usual",
+      "difficulty": 4,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "tiny",
+      "definition": "very small, smaller than usual",
+      "difficulty": 4,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "whisper",
+      "definition": "to speak very softly so others can barely hear",
+      "difficulty": 4,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "shout",
+      "definition": "to call out loudly",
+      "difficulty": 4,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "explore",
+      "definition": "to travel into a new place to learn about it",
+      "difficulty": 4,
+      "tags": [
+        "space",
+        "fantasy"
+      ]
+    },
+    {
+      "word": "discover",
+      "definition": "to find something for the first time",
+      "difficulty": 4,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "creature",
+      "definition": "any living thing, especially an unusual animal",
+      "difficulty": 4,
+      "tags": [
+        "animals",
+        "fantasy"
+      ]
+    },
+    {
+      "word": "burrow",
+      "definition": "an underground home that an animal digs",
+      "difficulty": 4,
+      "tags": [
+        "animals"
+      ]
+    },
+    {
+      "word": "comet",
+      "definition": "a bright space rock with a long glowing tail",
+      "difficulty": 4,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "rocket",
+      "definition": "a vehicle powered by hot gas that flies into space",
+      "difficulty": 4,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "freight",
+      "definition": "goods carried by a train, truck, or ship",
+      "difficulty": 5,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "caboose",
+      "definition": "the last car at the back of a freight train",
+      "difficulty": 5,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "signal",
+      "definition": "a sign or light used to send a message",
+      "difficulty": 5,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "platform",
+      "definition": "the flat area at a station where you wait for the train",
+      "difficulty": 5,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "expedition",
+      "definition": "an organized trip to do or find something special",
+      "difficulty": 5,
+      "tags": [
+        "fantasy",
+        "space"
+      ]
+    },
+    {
+      "word": "ancient",
+      "definition": "very, very old, from a time long ago",
+      "difficulty": 5,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "mystery",
+      "definition": "something puzzling that has not been figured out",
+      "difficulty": 5,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "legend",
+      "definition": "an old story passed down through many years",
+      "difficulty": 5,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "curious",
+      "definition": "wanting very much to know more about something",
+      "difficulty": 5,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "nervous",
+      "definition": "feeling worried or jumpy",
+      "difficulty": 5,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "excited",
+      "definition": "full of strong, happy feelings about what is coming",
+      "difficulty": 5,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "astronaut",
+      "definition": "a person trained to travel into outer space",
+      "difficulty": 5,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "orbit",
+      "definition": "the curved path one space object takes around another",
+      "difficulty": 5,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "galaxy",
+      "definition": "a huge group of stars, dust, and gas held together by gravity",
+      "difficulty": 5,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "meadow",
+      "definition": "a wide field of grass and flowers",
+      "difficulty": 5,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "village",
+      "definition": "a small group of houses where people live in the country",
+      "difficulty": 5,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "hobbit",
+      "definition": "a small make-believe person with hairy feet who loves comfort",
+      "difficulty": 5,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "elf",
+      "definition": "a graceful magical being from old stories",
+      "difficulty": 5,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "dwarf",
+      "definition": "a short, strong make-believe person who often mines for treasure",
+      "difficulty": 5,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "goblin",
+      "definition": "a small, mean make-believe creature from old stories",
+      "difficulty": 5,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "perilous",
+      "definition": "full of danger, risky",
+      "difficulty": 6,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "courage",
+      "definition": "the strength to face fear and act anyway",
+      "difficulty": 6,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "loyal",
+      "definition": "always faithful and true to a friend or group",
+      "difficulty": 6,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "clever",
+      "definition": "quick to learn or solve problems",
+      "difficulty": 6,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "cunning",
+      "definition": "smart in a sneaky or clever way",
+      "difficulty": 6,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "foolish",
+      "definition": "lacking good sense, silly",
+      "difficulty": 6,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "merry",
+      "definition": "cheerful and full of fun",
+      "difficulty": 6,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "weary",
+      "definition": "very tired",
+      "difficulty": 6,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "sturdy",
+      "definition": "strong and not easily broken",
+      "difficulty": 6,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "graceful",
+      "definition": "moving in a smooth, lovely way",
+      "difficulty": 6,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "vast",
+      "definition": "huge in size, hard to measure",
+      "difficulty": 6,
+      "tags": [
+        "space",
+        "fantasy"
+      ]
+    },
+    {
+      "word": "nebula",
+      "definition": "a cloud of gas and dust in space",
+      "difficulty": 6,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "asteroid",
+      "definition": "a small rocky object that orbits the sun",
+      "difficulty": 6,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "eclipse",
+      "definition": "when one space object blocks the light of another",
+      "difficulty": 6,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "constellation",
+      "definition": "a group of stars that form a pattern",
+      "difficulty": 6,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "voyage",
+      "definition": "a long trip, especially across the sea or through space",
+      "difficulty": 6,
+      "tags": [
+        "space",
+        "fantasy"
+      ]
+    },
+    {
+      "word": "crystal",
+      "definition": "a clear, hard mineral that often has a shape with flat sides",
+      "difficulty": 6,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "scroll",
+      "definition": "a roll of paper or parchment with writing on it",
+      "difficulty": 6,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "lantern",
+      "definition": "a case for a flame or light that you can carry",
+      "difficulty": 6,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "forge",
+      "definition": "a place where metal is heated and shaped, like a blacksmith's",
+      "difficulty": 6,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "contraption",
+      "definition": "a strange or complicated machine or device",
+      "difficulty": 7,
+      "tags": [
+        "trains",
+        "common"
+      ]
+    },
+    {
+      "word": "magnificent",
+      "definition": "extremely beautiful or impressive",
+      "difficulty": 7,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "mysterious",
+      "definition": "hard to understand or full of secrets",
+      "difficulty": 7,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "articulate",
+      "definition": "able to speak clearly and well",
+      "difficulty": 7,
+      "tags": [
+        "common",
+        "emotions"
+      ]
+    },
+    {
+      "word": "vibrant",
+      "definition": "bright, lively, and full of energy",
+      "difficulty": 7,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "reluctant",
+      "definition": "not eager to do something",
+      "difficulty": 7,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "hesitant",
+      "definition": "pausing because you are unsure",
+      "difficulty": 7,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "ferocious",
+      "definition": "very fierce and dangerous",
+      "difficulty": 7,
+      "tags": [
+        "animals",
+        "emotions"
+      ]
+    },
+    {
+      "word": "tranquil",
+      "definition": "calm, quiet, and peaceful",
+      "difficulty": 7,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "solitary",
+      "definition": "alone, by oneself",
+      "difficulty": 7,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "luminous",
+      "definition": "full of light, glowing",
+      "difficulty": 7,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "celestial",
+      "definition": "having to do with the sky or outer space",
+      "difficulty": 7,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "interstellar",
+      "definition": "happening or moving between the stars",
+      "difficulty": 7,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "subterranean",
+      "definition": "underground, beneath the earth's surface",
+      "difficulty": 7,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "trinket",
+      "definition": "a small, pretty object that does not cost much",
+      "difficulty": 7,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "relic",
+      "definition": "an old object that has survived from long ago",
+      "difficulty": 7,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "compass",
+      "definition": "a tool that uses a magnet to point north",
+      "difficulty": 7,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "parchment",
+      "definition": "a stiff yellow-tan material made from animal skin used to write on",
+      "difficulty": 7,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "cavern",
+      "definition": "a large cave deep inside the earth",
+      "difficulty": 7,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "riddle",
+      "definition": "a tricky question or puzzle to be solved",
+      "difficulty": 7,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "formidable",
+      "definition": "powerful enough to make others worried",
+      "difficulty": 8,
+      "tags": [
+        "emotions",
+        "fantasy"
+      ]
+    },
+    {
+      "word": "resilient",
+      "definition": "able to recover quickly from a setback",
+      "difficulty": 8,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "ingenious",
+      "definition": "very clever and original",
+      "difficulty": 8,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "tenacious",
+      "definition": "refusing to give up",
+      "difficulty": 8,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "valiant",
+      "definition": "showing great courage in the face of danger",
+      "difficulty": 8,
+      "tags": [
+        "emotions",
+        "fantasy"
+      ]
+    },
+    {
+      "word": "treacherous",
+      "definition": "not safe; betraying trust",
+      "difficulty": 8,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "ominous",
+      "definition": "giving a feeling that something bad will happen",
+      "difficulty": 8,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "desolate",
+      "definition": "empty and lonely",
+      "difficulty": 8,
+      "tags": [
+        "emotions",
+        "space"
+      ]
+    },
+    {
+      "word": "magnitude",
+      "definition": "how big, important, or extreme something is",
+      "difficulty": 8,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "trajectory",
+      "definition": "the curved path an object takes through space or air",
+      "difficulty": 8,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "propulsion",
+      "definition": "the force that pushes something forward",
+      "difficulty": 8,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "velocity",
+      "definition": "how fast something is moving in a certain direction",
+      "difficulty": 8,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "gravity",
+      "definition": "the force that pulls things toward the center of a planet",
+      "difficulty": 8,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "apparatus",
+      "definition": "a piece of equipment built for a specific job",
+      "difficulty": 8,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "mechanism",
+      "definition": "the parts of a machine that work together to do something",
+      "difficulty": 8,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "craftsman",
+      "definition": "a person who is highly skilled at making things by hand",
+      "difficulty": 8,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "foundry",
+      "definition": "a workshop where metal is melted and poured into molds",
+      "difficulty": 8,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "emissary",
+      "definition": "a person sent on a special mission as a representative",
+      "difficulty": 8,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "alliance",
+      "definition": "an agreement to work together for a shared purpose",
+      "difficulty": 8,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "prophecy",
+      "definition": "a prediction about what will happen in the future",
+      "difficulty": 8,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "indomitable",
+      "definition": "impossible to defeat or discourage",
+      "difficulty": 9,
+      "tags": [
+        "emotions",
+        "fantasy"
+      ]
+    },
+    {
+      "word": "perseverance",
+      "definition": "steady effort to keep going despite difficulty",
+      "difficulty": 9,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "benevolent",
+      "definition": "kind and wanting to help others",
+      "difficulty": 9,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "mischievous",
+      "definition": "playfully causing trouble",
+      "difficulty": 9,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "introspective",
+      "definition": "thinking carefully about your own thoughts and feelings",
+      "difficulty": 9,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "eloquent",
+      "definition": "fluent and persuasive in speaking or writing",
+      "difficulty": 9,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "ephemeral",
+      "definition": "lasting only a short time",
+      "difficulty": 9,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "ubiquitous",
+      "definition": "found everywhere",
+      "difficulty": 9,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "paradox",
+      "definition": "a statement that seems to contradict itself but may be true",
+      "difficulty": 9,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "anomaly",
+      "definition": "something different from what is normal or expected",
+      "difficulty": 9,
+      "tags": [
+        "space",
+        "common"
+      ]
+    },
+    {
+      "word": "hyperdrive",
+      "definition": "an imagined engine that lets a spaceship go faster than light",
+      "difficulty": 9,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "cosmonaut",
+      "definition": "a Russian word for a person who travels into outer space",
+      "difficulty": 9,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "supernova",
+      "definition": "a star exploding, briefly outshining a whole galaxy",
+      "difficulty": 9,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "singularity",
+      "definition": "a point where the rules of normal physics no longer apply",
+      "difficulty": 9,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "locomotion",
+      "definition": "the act of moving from one place to another",
+      "difficulty": 9,
+      "tags": [
+        "trains",
+        "common"
+      ]
+    },
+    {
+      "word": "embankment",
+      "definition": "a wall or bank of earth built to hold back water or carry a road",
+      "difficulty": 9,
+      "tags": [
+        "trains"
+      ]
+    },
+    {
+      "word": "artisan",
+      "definition": "a worker who is skilled in a craft, especially by hand",
+      "difficulty": 9,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "manuscript",
+      "definition": "a handwritten or typed document, especially before printing",
+      "difficulty": 9,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "incantation",
+      "definition": "magic words spoken or sung as part of a spell",
+      "difficulty": 9,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "apparition",
+      "definition": "a ghostly figure that appears suddenly",
+      "difficulty": 9,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "mythical",
+      "definition": "belonging to old stories about gods, heroes, and magic",
+      "difficulty": 10,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "ethereal",
+      "definition": "extremely delicate and light, as if not of this world",
+      "difficulty": 10,
+      "tags": [
+        "fantasy",
+        "space"
+      ]
+    },
+    {
+      "word": "labyrinthine",
+      "definition": "like a maze, with many confusing twists and turns",
+      "difficulty": 10,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "inscrutable",
+      "definition": "impossible to understand or interpret",
+      "difficulty": 10,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "indefatigable",
+      "definition": "never tiring; tireless",
+      "difficulty": 10,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "magnanimous",
+      "definition": "generous in forgiving others and not holding grudges",
+      "difficulty": 10,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "curmudgeon",
+      "definition": "a person who is grumpy and easily annoyed",
+      "difficulty": 10,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "juggernaut",
+      "definition": "a huge, powerful, unstoppable force",
+      "difficulty": 10,
+      "tags": [
+        "trains",
+        "fantasy"
+      ]
+    },
+    {
+      "word": "antiquated",
+      "definition": "old-fashioned or outdated",
+      "difficulty": 10,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "antediluvian",
+      "definition": "extremely old, from a time long before the modern world",
+      "difficulty": 10,
+      "tags": [
+        "fantasy"
+      ]
+    },
+    {
+      "word": "celestially",
+      "definition": "in a way that relates to the heavens or outer space",
+      "difficulty": 10,
+      "tags": [
+        "space"
+      ]
+    },
+    {
+      "word": "cataclysm",
+      "definition": "a sudden, violent event that causes great change",
+      "difficulty": 10,
+      "tags": [
+        "space",
+        "fantasy"
+      ]
+    },
+    {
+      "word": "perpendicular",
+      "definition": "at a right angle to a line or surface",
+      "difficulty": 10,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "conundrum",
+      "definition": "a confusing problem or question",
+      "difficulty": 10,
+      "tags": [
+        "fantasy",
+        "common"
+      ]
+    },
+    {
+      "word": "bibliophile",
+      "definition": "a person who loves and collects books",
+      "difficulty": 10,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "polyglot",
+      "definition": "a person who speaks many languages",
+      "difficulty": 10,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "philanthropist",
+      "definition": "a person who gives money or help to good causes",
+      "difficulty": 10,
+      "tags": [
+        "emotions"
+      ]
+    },
+    {
+      "word": "autodidact",
+      "definition": "a person who teaches themselves a subject",
+      "difficulty": 10,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "juxtaposition",
+      "definition": "placing two things side by side to compare or contrast them",
+      "difficulty": 10,
+      "tags": [
+        "common"
+      ]
+    },
+    {
+      "word": "zeitgeist",
+      "definition": "the spirit, mood, or ideas of a particular period in history",
+      "difficulty": 10,
+      "tags": [
+        "common"
+      ]
+    }
+  ]
+}
