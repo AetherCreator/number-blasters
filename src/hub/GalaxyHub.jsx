@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import NumberBlasters from "../NumberBlasters";
+import WordQuest from "../games/word-quest/WordQuest.jsx";
 import hubAudio from "./HubAudio";
 
 const STAR_COUNT = 80;
@@ -20,7 +21,7 @@ const PLANETS = [
     id: "word-quest",
     name: "Word Quest",
     emoji: "📖",
-    locked: true,
+    locked: false,
     x: 65,
     y: 45,
     size: 85,
@@ -136,6 +137,9 @@ export default function GalaxyHub() {
   // If a game is active, render it full-screen
   if (activeGame === "number-blasters") {
     return <NumberBlasters onExit={handleExit} />;
+  }
+  if (activeGame === "word-quest") {
+    return <WordQuest onExit={handleExit} />;
   }
 
   return (

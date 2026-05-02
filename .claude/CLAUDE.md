@@ -48,7 +48,7 @@ src/
 ├── data/                    ← Persistent storage (IndexedDB via Dexie)
 └── games/                   ← Game modules (each is self-contained)
     ├── number-blasters/     ← Math — BUILT, reference implementation
-    ├── word-quest/          ← Reading/Phonics — NEXT
+    ├── word-quest/          ← Reading/Phonics — v1 SHIPPED 2026-05-02
     ├── nature-lab/          ← Science/Nature — PLANNED
     └── art-studio/          ← Art/Creativity — PLANNED
 ```
@@ -90,7 +90,7 @@ settings:     { id, profileId, soundOn, musicOn, parentPin }
   - Procedural chiptune music, sound effects, 3 difficulty tiers
   - Combo streak system, 3-life shield system
   - Addition + subtraction, number ranges 1-20
-- **Word Quest**: NEXT — reading/phonics arcade game
+- **Word Quest**: v1 shipped 2026-05-02 — falling-word arcade with adaptive difficulty
 
 ## Design Language
 - Space theme for hub (SuperConci = space captain of their learning ship)

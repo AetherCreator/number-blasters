@@ -4,6 +4,7 @@ import useWorld from "./useWorld";
 import Joystick from "./Joystick";
 import QuickNav from "./QuickNav";
 import NumberBlasters from "../NumberBlasters";
+import WordQuest from "../games/word-quest/WordQuest.jsx";
 import { StoryQuest } from "../games/story-quest/StoryQuest.jsx";
 import hubAudio from "./HubAudio";
 
@@ -23,7 +24,7 @@ const PLANETS = [
     id: "word-quest",
     name: "Word Quest",
     emoji: "📖",
-    locked: true,
+    locked: false,
     worldX: 1200,
     worldY: 3800,
     size: 85,
@@ -290,6 +291,9 @@ export default function GalaxyNavigator() {
   // If a game is active, render it full-screen
   if (activeGame === "number-blasters") {
     return <NumberBlasters onExit={handleExit} />;
+  }
+  if (activeGame === "word-quest") {
+    return <WordQuest onExit={handleExit} />;
   }
   if (activeGame === "story-quest") {
     return <StoryQuest profile={{ id: "default" }} onExit={handleExit} />;

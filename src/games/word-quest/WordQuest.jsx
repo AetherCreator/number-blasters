@@ -105,7 +105,7 @@ class AudioEngine {
     const bufferSize = this.ctx.sampleRate * 0.3;
     const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
     const data = buffer.getChannelData(0);
-    for (let i = 0; i < bufferSize; i++) data[i] = (Words.random() * 2 - 1) * (1 - i / bufferSize);
+    for (let i = 0; i < bufferSize; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / bufferSize);
     const noise = this.ctx.createBufferSource();
     noise.buffer = buffer;
     const g = this.ctx.createGain();
@@ -178,7 +178,7 @@ class AudioEngine {
       // Melody (every other measure add variation)
       const melodyNote = melody[idx];
       if (melodyNote > 0) {
-        const octaveShift = Words.floor(step / 16) % 2 === 0 ? 1 : 1.5;
+        const octaveShift = Math.floor(step / 16) % 2 === 0 ? 1 : 1.5;
         this.playNote(melodyNote * octaveShift, stepMs / 1000 * 0.5, "square", this.musicGain, 0.12);
       }
 
@@ -187,7 +187,7 @@ class AudioEngine {
         const bufSize = this.ctx.sampleRate * 0.02;
         const buf = this.ctx.createBuffer(1, bufSize, this.ctx.sampleRate);
         const d = buf.getChannelData(0);
-        for (let i = 0; i < bufSize; i++) d[i] = (Words.random() * 2 - 1) * (1 - i / bufSize);
+        for (let i = 0; i < bufSize; i++) d[i] = (Math.random() * 2 - 1) * (1 - i / bufSize);
         const src = this.ctx.createBufferSource();
         src.buffer = buf;
         const hg = this.ctx.createGain();
@@ -227,26 +227,38 @@ const audio = new AudioEngine();
 
 // ─── GAME LOGIC ─────────────────────────────────────────────────────
 
-function generatePrompt() {
-  // Pick a target word
-  const targetIdx = Words.floor(Words.random() * WORDS.length);
-  const target = WORDS[targetIdx];
-  // Pick 3 distractors at distinct indices, avoiding the target
+// OPS-clue3: pool filter — words within currentDifficulty ± window
+function filterPool(currentDifficulty, window = 1) {
+  let pool = WORDS.filter(
+    (w) => Math.abs(w.difficulty - currentDifficulty) <= window
+  );
+  if (pool.length < 4) {
+    pool = WORDS.filter(
+      (w) => Math.abs(w.difficulty - currentDifficulty) <= window + 1
+    );
+  }
+  return pool.length >= 4 ? pool : WORDS;
+}
+
+function generatePrompt(currentDifficulty = 5) {
+  const pool = filterPool(currentDifficulty);
+  const targetIdx = Math.floor(Math.random() * pool.length);
+  const target = pool[targetIdx];
   const distractorSet = new Set([targetIdx]);
   while (distractorSet.size < 4) {
-    distractorSet.add(Words.floor(Words.random() * WORDS.length));
+    distractorSet.add(Math.floor(Math.random() * pool.length));
   }
   const indices = [...distractorSet];
-  // Shuffle so target isn't always first
   for (let i = indices.length - 1; i > 0; i--) {
-    const j = Words.floor(Words.random() * (i + 1));
+    const j = Math.floor(Math.random() * (i + 1));
     [indices[i], indices[j]] = [indices[j], indices[i]];
   }
-  const choices = indices.map((i) => WORDS[i].word);
+  const choices = indices.map((i) => pool[i].word);
   const correctIndex = indices.indexOf(targetIdx);
   return {
     prompt: target.definition,
     word: target.word,
+    difficulty: target.difficulty,
     choices,
     correctIndex,
   };
@@ -257,12 +269,12 @@ function generatePrompt() {
 function Starfield() {
   const stars = useRef(
     Array.from({ length: STAR_COUNT }, () => ({
-      x: Words.random() * 100,
-      y: Words.random() * 100,
-      size: Words.random() * 2.5 + 0.5,
-      speed: Words.random() * 15 + 8,
-      delay: Words.random() * 5,
-      brightness: Words.random() * 0.5 + 0.5,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      size: Math.random() * 2.5 + 0.5,
+      speed: Math.random() * 15 + 8,
+      delay: Math.random() * 5,
+      brightness: Math.random() * 0.5 + 0.5,
     }))
   ).current;
   return (
@@ -535,7 +547,7 @@ function TitleScreen({ onStart, onExit, soundOn, setSoundOn }) {
 
 function ResultsScreen({ score, correct, total, lives, onRestart, onMenu, onExit, soundOn }) {
   const survived = lives > 0;
-  const pct = total > 0 ? Words.round((correct / total) * 100) : 0;
+  const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
 
   const grade = !survived
     ? { label: "SHIP DOWN!", color: "#FF6B6B", emoji: "💥" }
@@ -644,24 +656,29 @@ export default function WordQuest({ onExit }) {
   const [falling, setFalling] = useState(false);
   const [feedback, setFeedback] = useState(null);
   const [soundOn, setSoundOn] = useState(true);
+  // OPS-clue3: adaptive difficulty
+  const [currentDifficulty, setCurrentDifficulty] = useState(5);
+  const [recentAnswers, setRecentAnswers] = useState([]);
+  const currentDifficultyRef = useRef(5);
   const timerRef = useRef(null);
   const answeredRef = useRef(false);
   const gameActiveRef = useRef(false);
 
-  const nextProblem = useCallback((diff) => {
+  const nextProblem = useCallback(() => {
     answeredRef.current = false;
     setFalling(false);
     setTimeout(() => {
-      setProblem(generatePrompt());
+      setProblem(generatePrompt(currentDifficultyRef.current));
       setProblemKey((k) => k + 1);
       setFalling(true);
     }, 350);
-  }, [difficulty]);
+  }, []);
 
   const endGame = useCallback((remainingLives) => {
     gameActiveRef.current = false;
     if (timerRef.current) clearInterval(timerRef.current);
     audio.stopMusic();
+    if (soundOn) audio.gameOver();
     setScreen("results");
     setLives(remainingLives);
   }, []);
@@ -676,6 +693,9 @@ export default function WordQuest({ onExit }) {
     setTotal(0);
     setLives(MAX_LIVES);
     setTimeLeft(GAME_DURATION);
+    setRecentAnswers([]);
+    currentDifficultyRef.current = 5;
+    setCurrentDifficulty(5);
     setScreen("game");
     gameActiveRef.current = true;
     nextProblem(diff);
@@ -708,6 +728,7 @@ export default function WordQuest({ onExit }) {
   const handleMiss = useCallback(() => {
     if (answeredRef.current || !gameActiveRef.current) return;
     answeredRef.current = true;
+    recordAnswer(false);
     if (soundOn) audio.asteroidImpact();
     setShake(true);
     setFlash("#FF6B6B33");
@@ -731,6 +752,30 @@ export default function WordQuest({ onExit }) {
     });
   }, [soundOn, nextProblem, endGame]);
 
+  // OPS-clue3: record answer + adaptive difficulty nudge
+  const recordAnswer = useCallback((wasCorrect) => {
+    setRecentAnswers((prev) => {
+      const next = [...prev, wasCorrect].slice(-10);
+      if (next.length === 10) {
+        const acc = next.filter(Boolean).length / 10;
+        const old = currentDifficultyRef.current;
+        let updated = old;
+        if (acc > 0.8) updated = Math.min(10, old + 1);
+        else if (acc < 0.5) updated = Math.max(1, old - 1);
+        if (updated !== old) {
+          // eslint-disable-next-line no-console
+          console.log(
+            `[word-quest] difficulty ${old} -> ${updated} (acc=${acc.toFixed(2)} on last 10)`
+          );
+          currentDifficultyRef.current = updated;
+          setCurrentDifficulty(updated);
+        }
+        return [];
+      }
+      return next;
+    });
+  }, []);
+
   const handleSelect = (choice) => {
     if (screen !== "game" || !problem || answeredRef.current || !gameActiveRef.current) return;
     answeredRef.current = true;
@@ -743,6 +788,7 @@ export default function WordQuest({ onExit }) {
 
       if (soundOn) {
         audio.correctHit();
+      recordAnswer(true);
         if (newCombo > combo) audio.comboUp();
       }
 
@@ -758,6 +804,7 @@ export default function WordQuest({ onExit }) {
       nextProblem();
     } else {
       if (soundOn) audio.wrongHit();
+    recordAnswer(false);
       setStreak(0);
       setCombo(1);
       setShake(true);
