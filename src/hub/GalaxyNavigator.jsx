@@ -35,7 +35,7 @@ const PLANETS = [
     id: "story-quest",
     name: "Story Quest",
     emoji: "📖",
-    locked: false,
+    locked: true,
     worldX: 3600,
     worldY: 3400,
     size: 90,
